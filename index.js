@@ -28,7 +28,7 @@ const app = express()
 const server = http.createServer(app)
 const stream = new Stream({
   name: "name",
-  streamUrl: `rtsp://${STREAM_USER}:${STREAM_PASS}@${STREAM_HOST}/${STREAM_PATH}`,
+  streamUrl: `rtsp://${STREAM_USER}:${STREAM_PASS}@${STREAM_HOST}:${STREAM_PORT}/${STREAM_PATH}`,
   server
 })
 
